@@ -99,6 +99,7 @@ finalProject_EXTERNAL_OBJECTS =
 finalProject: CMakeFiles/finalProject.dir/main.cpp.o
 finalProject: CMakeFiles/finalProject.dir/build.make
 finalProject: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd
+finalProject: libimguizmo.a
 finalProject: imgui/libimgui.a
 finalProject: glad/libglad.a
 finalProject: glfw/src/libglfw3.a

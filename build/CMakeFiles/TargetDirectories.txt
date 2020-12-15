@@ -1,5 +1,6 @@
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/build/CMakeFiles/finalProject.dir
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/build/CMakeFiles/rebuild_cache.dir
+/Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/build/CMakeFiles/imguizmo.dir
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/build/CMakeFiles/edit_cache.dir
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/build/glad/CMakeFiles/rebuild_cache.dir
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/build/glad/CMakeFiles/edit_cache.dir

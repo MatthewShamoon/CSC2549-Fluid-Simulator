@@ -143,6 +143,19 @@ finalProject/fast:
 .PHONY : finalProject/fast
 
 #=============================================================================
+# Target rules for targets named imguizmo
+
+# Build rule for target.
+imguizmo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imguizmo
+.PHONY : imguizmo
+
+# fast build rule for target.
+imguizmo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imguizmo.dir/build.make CMakeFiles/imguizmo.dir/build
+.PHONY : imguizmo/fast
+
+#=============================================================================
 # Target rules for targets named glad
 
 # Build rule for target.
@@ -180,6 +193,33 @@ imgui: cmake_check_build_system
 imgui/fast:
 	$(MAKE) $(MAKESILENT) -f imgui/CMakeFiles/imgui.dir/build.make imgui/CMakeFiles/imgui.dir/build
 .PHONY : imgui/fast
+
+extern/libigl/external/imguizmo/ImGuizmo.o: extern/libigl/external/imguizmo/ImGuizmo.cpp.o
+
+.PHONY : extern/libigl/external/imguizmo/ImGuizmo.o
+
+# target to build an object file
+extern/libigl/external/imguizmo/ImGuizmo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imguizmo.dir/build.make CMakeFiles/imguizmo.dir/extern/libigl/external/imguizmo/ImGuizmo.cpp.o
+.PHONY : extern/libigl/external/imguizmo/ImGuizmo.cpp.o
+
+extern/libigl/external/imguizmo/ImGuizmo.i: extern/libigl/external/imguizmo/ImGuizmo.cpp.i
+
+.PHONY : extern/libigl/external/imguizmo/ImGuizmo.i
+
+# target to preprocess a source file
+extern/libigl/external/imguizmo/ImGuizmo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imguizmo.dir/build.make CMakeFiles/imguizmo.dir/extern/libigl/external/imguizmo/ImGuizmo.cpp.i
+.PHONY : extern/libigl/external/imguizmo/ImGuizmo.cpp.i
+
+extern/libigl/external/imguizmo/ImGuizmo.s: extern/libigl/external/imguizmo/ImGuizmo.cpp.s
+
+.PHONY : extern/libigl/external/imguizmo/ImGuizmo.s
+
+# target to generate assembly for a file
+extern/libigl/external/imguizmo/ImGuizmo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imguizmo.dir/build.make CMakeFiles/imguizmo.dir/extern/libigl/external/imguizmo/ImGuizmo.cpp.s
+.PHONY : extern/libigl/external/imguizmo/ImGuizmo.cpp.s
 
 main.o: main.cpp.o
 
@@ -220,6 +260,10 @@ help:
 	@echo "... glad"
 	@echo "... glfw"
 	@echo "... imgui"
+	@echo "... imguizmo"
+	@echo "... extern/libigl/external/imguizmo/ImGuizmo.o"
+	@echo "... extern/libigl/external/imguizmo/ImGuizmo.i"
+	@echo "... extern/libigl/external/imguizmo/ImGuizmo.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

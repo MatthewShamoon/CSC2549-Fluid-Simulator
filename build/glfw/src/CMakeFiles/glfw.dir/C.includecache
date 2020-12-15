@@ -11,6 +11,8 @@ stddef.h
 -
 stdint.h
 -
+vulkan/vulkan.h
+-
 GLES/gl.h
 -
 GLES/glext.h
@@ -37,17 +39,15 @@ OpenGL/gl3ext.h
 -
 GL/glcorearb.h
 -
-OpenGL/gl.h
--
 OpenGL/glu.h
+-
+GL/glu.h
+-
+OpenGL/gl.h
 -
 GL/gl.h
 -
 GL/glext.h
--
-GL/glu.h
--
-vulkan/vulkan.h
 -
 
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/cocoa_init.m
@@ -107,10 +107,6 @@ dlfcn.h
 -
 Carbon/Carbon.h
 -
-CoreVideo/CVBase.h
--
-CoreVideo/CVDisplayLink.h
--
 Cocoa/Cocoa.h
 -
 posix_thread.h
@@ -119,10 +115,6 @@ cocoa_joystick.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/cocoa_joystick.h
 nsgl_context.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/nsgl_context.h
-egl_context.h
-/Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/egl_context.h
-osmesa_context.h
-/Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/osmesa_context.h
 
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/cocoa_time.c
 internal.h
@@ -165,8 +157,6 @@ assert.h
 -
 
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/egl_context.h
-EGL/eglplatform.h
--
 
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/glx_context.h
 
@@ -215,6 +205,10 @@ wl_platform.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/wl_platform.h
 null_platform.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/null_platform.h
+egl_context.h
+/Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/egl_context.h
+osmesa_context.h
+/Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/osmesa_context.h
 
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/linux_joystick.h
 linux/input.h
@@ -249,14 +243,16 @@ stdatomic.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/nsgl_context.m
 internal.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/internal.h
+unistd.h
+-
+math.h
+-
 
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/null_joystick.h
 
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/null_platform.h
 dlfcn.h
 -
-osmesa_context.h
-/Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/osmesa_context.h
 posix_time.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/posix_time.h
 posix_thread.h
@@ -323,10 +319,6 @@ win32_joystick.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/win32_joystick.h
 wgl_context.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/wgl_context.h
-egl_context.h
-/Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/egl_context.h
-osmesa_context.h
-/Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/osmesa_context.h
 
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/window.c
 internal.h
@@ -359,10 +351,6 @@ null_joystick.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/null_joystick.h
 xkb_unicode.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/xkb_unicode.h
-egl_context.h
-/Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/egl_context.h
-osmesa_context.h
-/Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/osmesa_context.h
 wayland-xdg-shell-client-protocol.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/wayland-xdg-shell-client-protocol.h
 wayland-xdg-decoration-client-protocol.h
@@ -391,6 +379,8 @@ X11/keysym.h
 -
 X11/Xatom.h
 -
+X11/Xresource.h
+-
 X11/Xcursor/Xcursor.h
 -
 X11/extensions/Xrandr.h
@@ -401,6 +391,8 @@ X11/extensions/Xinerama.h
 -
 X11/extensions/XInput2.h
 -
+X11/extensions/shape.h
+-
 posix_thread.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/posix_thread.h
 posix_time.h
@@ -409,10 +401,6 @@ xkb_unicode.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/xkb_unicode.h
 glx_context.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/glx_context.h
-egl_context.h
-/Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/egl_context.h
-osmesa_context.h
-/Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/osmesa_context.h
 linux_joystick.h
 /Users/matthew/Desktop/Masters-School/Courses/Fall Semester/Physics Based Animation/assignment/project/finalProject/extern/libigl/external/glfw/src/linux_joystick.h
 null_joystick.h
